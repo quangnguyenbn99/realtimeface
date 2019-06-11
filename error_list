@@ -1,0 +1,26 @@
+# subprocess error fixed by adding "shell= True"
+
+facenet.py   
+
+gitproc = Popen(['git', 'rev-parse', 'HEAD'], stdout = PIPE, cwd=src_path,shell=True)
+
+--------------------------------------------------------------------------------
+#ValueError: Cannot have number of splits n_splits=10 greater than the number of samples: 0.
+
+lfw.py
+
+if len(pair) == 3:
+            path0 = os.path.join(lfw_dir, pair[0], pair[0] + '_' + '%04d' % int(pair[1])+'_0.'+file_ext)
+            path1 = os.path.join(lfw_dir, pair[0], pair[0] + '_' + '%04d' % int(pair[2])+'_0.'+file_ext)
+            issame = True
+        elif len(pair) == 4:
+            path0 = os.path.join(lfw_dir, pair[0], pair[0] + '_' + '%04d' % int(pair[1])+'_0.'+file_ext)
+            path1 = os.path.join(lfw_dir, pair[2], pair[2] + '_' + '%04d2017-11-10 ' % int(pair[3])+'_0.'+file_ext)
+--------------------------------------------------------------------------------
+ZeroDivisionError: float division by zero
+elif len(pair) == 4:
+            path0 = os.path.join(lfw_dir, pair[0], pair[0] + '_' + '%04d' % int(pair[1])+'_0.'+file_ext)
+            path1 = os.path.join(lfw_dir, pair[2], pair[2] + '_' + '%04d2017-11-10 ' % int(pair[3])+'_0.'+file_ext)
+	    issame = False
+
+

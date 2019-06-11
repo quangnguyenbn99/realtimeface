@@ -1,0 +1,1 @@
+/home/ubuntu/Desktop/PRfacenet/test/Test_160/im_capture/1shot_0.png 203 57 374 271

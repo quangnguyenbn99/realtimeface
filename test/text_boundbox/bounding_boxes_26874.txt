@@ -1,0 +1,3 @@
+/home/ubuntu/Desktop/PRfacenet/test/Test_160/im_capture/001_0.png 195 452 595 938
+/home/ubuntu/Desktop/PRfacenet/test/Test_160/im_capture/003_0.png 248 472 550 832
+/home/ubuntu/Desktop/PRfacenet/test/Test_160/im_capture/002_0.png 194 452 605 933
